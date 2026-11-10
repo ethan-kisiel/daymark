@@ -11,24 +11,24 @@ export class DmPill extends BaseElement {
       display: inline-flex;
       align-items: center;
       padding: 4px 7px;
-      border-radius: 5px;
-      background: #f1f4f0;
-      color: #667368;
+      border-radius: 6px;
+      background: #f1f3ef;
+      color: #67746c;
       font-size: 10px;
       font-weight: 700;
       letter-spacing: 0.02em;
     }
     span.green {
-      background: var(--green-2, #eaf1eb);
-      color: var(--green, #315b45);
+      background: var(--green-soft, #ebf3ee);
+      color: var(--green, #3f6559);
     }
     span.amber {
-      background: var(--amber-bg, #fff5e7);
-      color: var(--amber, #a86c22);
+      background: var(--amber-soft, #faf0e3);
+      color: var(--amber, #a86c3d);
     }
     span.red {
-      background: var(--red-bg, #fbefed);
-      color: var(--red, #a54d42);
+      background: var(--red-soft, #fbeae6);
+      color: var(--red, #a45d4d);
     }
   `;
 

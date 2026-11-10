@@ -12,9 +12,10 @@ export class DmTaskCard extends BaseElement {
   static styles = css`
     .task-card {
       padding: 17px 19px;
-      border: 1px solid var(--line, #e4e8e1);
-      border-radius: 10px;
-      background: white;
+      border: 1px solid var(--line, #dfe4dc);
+      border-radius: 12px;
+      background: var(--surface, #fffdfb);
+      box-shadow: 0 1px 0 rgba(26, 37, 33, 0.04);
       margin-bottom: 10px;
     }
     .task-card-top {
@@ -25,12 +26,14 @@ export class DmTaskCard extends BaseElement {
     h3 {
       font-size: 14px;
       margin: 0 0 6px;
-      color: var(--ink, #202722);
+      color: var(--ink, #1f2b28);
+      font-weight: 650;
     }
     p {
       font-size: 12px;
-      color: var(--muted, #778078);
+      color: var(--muted, #64746d);
       margin: 0;
+      line-height: 1.5;
     }
     .task-actions {
       margin-left: auto;

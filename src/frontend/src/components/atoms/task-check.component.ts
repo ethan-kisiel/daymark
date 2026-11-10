@@ -10,8 +10,8 @@ export class DmTaskCheck extends BaseElement {
     button {
       width: 17px;
       height: 17px;
-      border: 1.5px solid #b7c2b8;
-      border-radius: 5px;
+      border: 1.5px solid #c0c9c1;
+      border-radius: 6px;
       background: white;
       cursor: pointer;
       display: inline-grid;
@@ -19,11 +19,15 @@ export class DmTaskCheck extends BaseElement {
       padding: 0;
       font: inherit;
       font-size: 11px;
-      color: inherit;
+      color: white;
+      transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+    }
+    button:hover {
+      transform: translateY(-1px);
     }
     button.checked {
-      background: var(--green, #315b45);
-      border-color: var(--green, #315b45);
+      background: var(--green, #3f6559);
+      border-color: var(--green, #3f6559);
       color: white;
     }
   `;

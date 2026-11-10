@@ -9,8 +9,8 @@ export class DmProgress extends BaseElement {
   static styles = css`
     .progress {
       height: 6px;
-      background: #edf0eb;
-      border-radius: 20px;
+      background: #edf1ed;
+      border-radius: 999px;
       overflow: hidden;
       margin-top: 10px;
       width: 100%;
@@ -18,8 +18,8 @@ export class DmProgress extends BaseElement {
     .progress span {
       display: block;
       height: 100%;
-      background: var(--green, #315b45);
-      border-radius: 20px;
+      background: var(--green, #3f6559);
+      border-radius: inherit;
       transition: width 0.3s ease;
     }
   `;

@@ -1,21 +1,39 @@
 :root {
-  color-scheme: light dark;
-  background-color: #ffffff;
+  color-scheme: light;
+  --bg: #f3f0ea;
+  --bg-strong: #ebe3d8;
+  --surface: #fffdfb;
+  --surface-soft: #f7f3ef;
+  --panel: #ffffff;
+  --line: #dde3dc;
+  --ink: #1f2b28;
+  --muted: #66756d;
+  --green: #3f6559;
+  --green-deep: #2d4d44;
+  --green-soft: #edf3ef;
+  --amber: #a97045;
+  --amber-soft: #f8efe2;
+  --red: #a45e4d;
+  --red-soft: #fbeae6;
+  --shadow: 0 1px 0 rgba(26, 37, 33, 0.04), 0 6px 18px rgba(18, 28, 25, 0.04);
+  --radius: 16px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    background-color: #16171d;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
 }
 
 body {
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-width: 320px;
-  min-height: 100svh;
+  min-height: 100vh;
+  background: var(--bg);
+  font-family: Inter, 'Segoe UI', sans-serif;
+  color: var(--ink);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

@@ -12,7 +12,7 @@ export class DmModal extends BaseElement {
     .modal-backdrop {
       position: fixed;
       inset: 0;
-      background: #17231b66;
+      background: rgba(20, 29, 26, 0.42);
       display: none;
       align-items: center;
       justify-content: center;
@@ -24,23 +24,24 @@ export class DmModal extends BaseElement {
     }
     .modal {
       width: min(560px, 100%);
-      background: white;
-      border-radius: 14px;
+      background: #ffffff;
+      border-radius: 16px;
       padding: 24px;
-      box-shadow: 0 20px 60px #15251c33;
+      box-shadow: 0 1px 0 rgba(26, 37, 33, 0.04), 0 12px 26px rgba(17, 25, 22, 0.06);
+      border: 1px solid var(--line, #dfe4dc);
     }
     .eyebrow {
-      color: var(--green, #315b45);
+      color: var(--green, #3f6559);
       font-size: 11px;
       text-transform: uppercase;
       letter-spacing: 0.13em;
-      font-weight: 750;
+      font-weight: 800;
       margin-bottom: 8px;
     }
     h2 {
       margin: 0 0 7px;
       font-size: 20px;
-      color: var(--ink, #202722);
+      color: var(--ink, #1f2b28);
     }
     .modal-actions {
       display: flex;

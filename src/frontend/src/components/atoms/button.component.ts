@@ -15,37 +15,41 @@ export class DmButton extends BaseElement {
     button {
       font: inherit;
       cursor: pointer;
-      border: 1px solid var(--line, #e4e8e1);
-      background: var(--surface, #fff);
-      border-radius: 8px;
-      padding: 9px 13px;
-      color: var(--ink, #344239);
+      border: 1px solid var(--line, #dfe4dc);
+      background: var(--surface, #fffdfb);
+      border-radius: 12px;
+      padding: 9px 14px;
+      color: var(--ink, #1f2b28);
       font-weight: 600;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 6px;
-      transition: background 0.15s ease;
+      transition: transform 0.15s ease, border-color 0.2s ease;
     }
     button:hover:not(:disabled) {
-      background: var(--surface-2, #f8f9f6);
+      transform: translateY(-1px);
+      border-color: rgba(63, 101, 89, 0.25);
     }
     button.primary {
-      background: var(--green, #315b45);
+      background: var(--green, #3f6559);
       color: white;
-      border-color: var(--green, #315b45);
+      border-color: var(--green, #3f6559);
     }
     button.ghost {
       border-color: transparent;
       background: transparent;
+      box-shadow: none;
     }
     button.small {
-      padding: 6px 9px;
+      padding: 6px 10px;
       font-size: 12px;
     }
     button:disabled {
       opacity: 0.6;
       cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
     }
   `;
 
