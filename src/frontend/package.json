@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "style:check": "prettier --check \"**/*.ts\"",
+    "style:fix": "prettier --write \"**/*.ts\"",
     "test": "vitest run",
     "preview": "vite preview"
   },
